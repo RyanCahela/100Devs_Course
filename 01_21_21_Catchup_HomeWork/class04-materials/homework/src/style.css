@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --lightskyblue: lightskyblue;
+  --limegreen: limegreen;
+  --whitesmoke: whitesmoke;
+
+  --background-color: var(--lightskyblue);
+  --border-color: var(--limegreen);
+  --font-color: var(--whitesmoke);
+  --link-color: var(--limegreen);
+}
+
+/************************
+Elements
+************************/
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  padding-inline: 5px; 
+}
+
+/************************
+Utitiles
+************************/
+
+.clearfix {
+  clear: both;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.current-link {
+  color: var(--whitesmoke);
+  font-weight: bold;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+/************************
+Components
+************************/
+
+.container {
+  border: 5px solid var(--border-color);
+  padding: 3rem;
+  max-width: 823px;
+  margin-inline: auto;
+}
+
+.about-us__logo {
+  max-width: 200px;
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-us__paragraph {
+  line-height: 1.5;
+}
+
+.header__heading {
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.link-list {
+  list-style: none;
+  margin-inline: auto;
+  width: max-content;
+  padding-left: 0;
+}
+
+.link-list li {
+  display: inline-block;
+}
+
+.link-list li + li {
+  border-left: 2px solid black;
+}
