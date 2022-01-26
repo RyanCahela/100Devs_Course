@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+footer,
+section {
+  background-color: rgb(204,205,203);
+  border: 2px solid gray;
+}
+
+header,
+footer {
+  height: 15vh;
+  width: 100%;
+}
+
+footer {
+  clear: both;
+}
+
+section {
+  float: left;
+  height: 100%;
+}
+
+.span-3 > section {
+  width: 33.33%
+}
+
+.span-2 > section {
+  width: 50%;
+}
+
+.row > *,
+.big-row > * {
+  float: left;
+}
+
+.row {
+  height: 30vh;
+}
+
+.big-row {
+  height: 40vh;
+}
