@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+footer {
+  height: 20vh;
+}
+
+
+header,
+section,
+footer {
+  background-color: lightgoldenrodyellow;
+  border: 2px solid gray;
+}
+
+footer {
+  clear: both;
+}
+
+.section,
+.section--large {
+  float: left;
+  height: 60vh;
+}
+
+.section {
+  width: 20%;
+}
+
+.section--large {
+  width: 40%;
+}
