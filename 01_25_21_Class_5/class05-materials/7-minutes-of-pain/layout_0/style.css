@@ -1,0 +1,28 @@
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer,
+section {
+  background-color: rgb(204,205,203);
+  border: 1px solid gray;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+section {
+  height: 300px;
+  width: 33.3333%;
+  float: left;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  clear: both;
+}
