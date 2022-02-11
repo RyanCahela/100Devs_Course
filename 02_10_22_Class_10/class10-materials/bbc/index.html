@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css">
     <title>01_21_21_BBC_Homework</title>
     <style>
       .screen-reader-only {
@@ -29,11 +30,11 @@
     <!--------------------\
       HEADER
     \--------------------->
-    <header>
-      <img src="#" alt="logo" />
-      <nav>
-        <a href="#">Sign In</a>
-        <ul>
+    <header class="header">
+      <img src="https://picsum.photos/120/50" alt="logo" />
+      <nav class="header__nav">
+        <a href="#" class="header__sign-in">Sign In</a>
+        <ul class="header__nav-list">
           <li>Home</li>
           <li>News</li>
           <li>Sports</li>
@@ -44,7 +45,7 @@
           <li>Culture</li>
           <li>More</li>
         </ul>
-        <form>
+        <form class="header__search">
           <div>
             <label for="searchInput" class="screen-reader-only">Search</label>
             <input type="text" id="searchInput" placeholder="Search" />
@@ -56,11 +57,13 @@
     <!--------------------\
       MAIN CONTENT
     \--------------------->
-    <main>
-      <h1>Welcome to BBC.com</h1>
-      <span class="current-day js-current-day">Thursday, 13 August</span>
-      <section class="headline-news">
-        <ul>
+    <main class="clear">
+      <section class="welcome-banner">
+        <h1>Welcome to BBC.com</h1>
+        <span class="current-day js-current-day">Thursday, 13 August</span>
+      </section>
+      <section class="headline-news clear">
+        <ul class="headline-news__list">
           <li class="headline-news__hero">
             <img src="https://picsum.photos/384/216" />
             <h3>Israel and UAE strike historic peace deal</h3>
@@ -70,29 +73,29 @@
             </p>
             <span class="left-border-red uppercase">Middle East</span>
           </li>
-          <li>
+          <li class="headline-news__list-item">
             <img src="https://picsum.photos/384/216" />
             <h3>Americans, go home: Tension at Canada-US border</h3>
             <span class="left-border-blue uppercase">Canada</span>
           </li>
-          <li>
+          <li class="headline-news__list-item">
             <img src="https://picsum.photos/384/216" />
             <h3>How will the world vaccinate seven billion people?</h3>
             <span class="left-border-red uppercase">Health</span>
           </li>
-          <li>
+          <li class="headline-news__list-item">
             <img src="https://picsum.photos/384/216" />
             <h3>The online 'productivity gyms'</h3>
             <span class="left-border-blue uppercase">Work Life</span>
           </li>
-          <li>
+          <li class="headline-news__list-item">
             <img src="https://picsum.photos/384/216" />
             <h3>The fold singer murdered for his music</h3>
             <span class="left-border-blue uppercase">Culture</span>
           </li>
         </ul>
       </section>
-      <section class="news">
+      <section class="news clear">
         <h2 class="left-border-red">News</h2>
         <ul>
           <li>

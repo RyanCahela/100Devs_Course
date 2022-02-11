@@ -4,3 +4,53 @@
   box-sizing: border-box;
 }
 
+ul[class] {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+  
+
+
+.header * {
+  padding-left: 1rem;
+  float: left;
+}
+
+.header__nav {
+  display: inline;
+}
+
+.header__nav-list {
+}
+
+.header__nav-list li {
+}
+
+.welcome-banner h1 {
+  float: left;
+}
+
+.welcome-banner span{
+  float: right;
+}
+
+.headline-news * {
+  float: left;
+}
+
+.headline-news__list {
+  width: 100%;
+}
+
+.headline-news__list-item{
+  width: 25%;
+}
+
+.headline-news__hero {
+  max-width: 50%;
+}
+
+
