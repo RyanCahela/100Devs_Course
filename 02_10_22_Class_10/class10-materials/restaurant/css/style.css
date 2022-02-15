@@ -24,28 +24,138 @@
 body {
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section {
+  padding-block: 2rem;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+.l-center {
+  --inline-padding: 1.25rem;
+  max-width: 1000px;
+  margin-left: var(--margin-left, auto);
+  margin-right: var(--margin-right, auto);
+  padding-left: var(--padding-left, var(--inline-padding, 1rem));
+  padding-right: var(--padding-right, var(--inline-padding, 1rem));
 }
 
-footer {
+.l-cluster {
+  margin-left: -2%;
+}
+
+.l-cluster > * {
+  float: left;
+  min-width: 23%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.l-stack > * + * {
+  padding-top: 1rem;
+}
+
+.l-stack > * {
+  display: block;
+}
+
+.l-about-us {
+  padding-left: min(500px, 40vw);
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* HEADER
 /*******************************************/
+
+.header {
+  background-color: navajowhite;
+}
+
+.header__logo-container {
+  float: left;
+}
+
+.header__nav {
+  float: right;
+}
+
+.header__nav-li {
+  float: left;
+}
+
+.header__nav-li + .header__nav-li {
+  padding-left: 1rem;
+}
+
+/******************************************
+/* HERO
+/*******************************************/
+
 .hero {
   background-color: silver;
 }
+
+.hero__social-list-item {
+  float: left;
+}
+.hero__social-list-item + .hero__social-list-item {
+  padding-left: 1rem;
+}
+
+/******************************************
+/*  ABOUT US 
+/*******************************************/
 
 .about-us {
   background-color: seashell;
 }
 
+/******************************************
+/*  ORDER NOW
+/*******************************************/
+.order-now {
+  background-color: lightgoldenrodyellow;
+}
+
+.order-now__card {
+  text-align: center;
+  border: 1px solid #333;
+  padding: 1rem;
+}
+
+/******************************************
+/*  BOOK TABLE
+/*******************************************/
+
 .book-table {
-  background-color: mintcream;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.book-table__operating-hours > * {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.book-table__operating-hours span {
+  display: block;
 }
 
 .rating {
@@ -53,7 +163,7 @@ footer {
 }
 
 .carousel {
-  background-color: lightcyan;
+  background-color: lightblue;
 }
 
 .testimonials {

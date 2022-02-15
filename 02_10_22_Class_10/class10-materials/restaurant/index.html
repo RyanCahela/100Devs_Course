@@ -17,25 +17,29 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div>
+    <header class="header clearfix">
+      <div class="l-center">
+        <div class="header__logo-container">
           <img src="" alt="logo" />
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Order Now</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Location</a></li>
-            <li><span class="fas fa-cart-shopping"></span></li>
-            <li><span class="fas fa-search"></span></li>
+        <nav class="header__nav">
+          <ul class="clearfix">
+            <li class="header__nav-li"><a href="#">Home</a></li>
+            <li class="header__nav-li"><a href="#">About Us</a></li>
+            <li class="header__nav-li"><a href="#">Menu</a></li>
+            <li class="header__nav-li"><a href="#">Order Now</a></li>
+            <li class="header__nav-li"><a href="#">Blog</a></li>
+            <li class="header__nav-li"><a href="#">Location</a></li>
+            <li class="header__nav-li">
+              <span class="fas fa-cart-shopping"></span>
+            </li>
+            <li class="header__nav-li"><span class="fas fa-search"></span></li>
           </ul>
         </nav>
-      </header>
-      <section class="hero">
+      </div>
+    </header>
+    <section class="hero">
+      <div class="l-center l-stack">
         <h1>Welcome To Our Cousine Restaurant</h1>
         <form>
           <label
@@ -51,22 +55,24 @@
             <option>Option 4</option>
           </select>
         </form>
-        <ul>
-          <li>
+        <ul class="hero__social-list clearfix">
+          <li class="hero__social-list-item">
             <span class="fa-brands fa-facebook-f"></span>
             <span>252k</span>
           </li>
-          <li>
+          <li class="hero__social-list-item">
             <span class="fa-brands fa-twitter"></span>
             <span>62k</span>
           </li>
-          <li>
+          <li class="hero__social-list-item">
             <span class="fa-brands fa-instagram"></span>
             <span>55k</span>
           </li>
         </ul>
-      </section>
-      <section class="about-us">
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="l-center l-stack l-about-us">
         <h2><span>About Us</span>Discover Our Restaurant Story</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio,
@@ -84,8 +90,10 @@
           <a href="#">Discover Menu</a>
           <span class="fas fa-arrow-right"></span>
         </div>
-      </section>
-      <section class="order-now">
+      </div>
+    </section>
+    <section class="order-now">
+      <div class="l-center l-stack">
         <h2><span>Order Online Now</span>Our Specility Cuisine</h2>
         <nav aria-label="menu-nav">
           <ul>
@@ -97,11 +105,11 @@
           </ul>
         </nav>
         <section class="order-now__page">
-          <ul class="order-now__card-list">
+          <ul class="order-now__card-list l-cluster clearfix">
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -118,7 +126,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -135,7 +143,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -152,7 +160,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -169,7 +177,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -186,7 +194,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -203,7 +211,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -220,7 +228,7 @@
             <li>
               <div class="order-now__card">
                 <img src="#" />
-                <div class="order-now__card-text">
+                <div class="order-now__card-text l-stack">
                   <span>$14.99</span>
                   <div class="rating">
                     <span class="fas fa-star"></span>
@@ -235,23 +243,25 @@
               </div>
             </li>
           </ul>
-        </section>
+      </div>
       </section>
-      <section class="book-table">
+    </section>
+    <section class="book-table">
+      <div class="l-center l-stack">
         <h2><span>Book Table</span>Opening Hours</h2>
         <div class="book-table__phone-icon">
           <a href="#" class="fas fa-phone"></a>
         </div>
         <p>Call Now</p>
         <a href="#">+12345 678 910</a>
-        <section class="book-table__operating-hours">
+        <section class="book-table__operating-hours l-center">
           <p>Monday to Tuesday<span>09:00 am - 22:00 pm</span></p>
           <p>Friday to Sunday<span>11:00 am - 20:00 pm</span></p>
         </section>
-      </section>
-      <section class="carousel"></section>
-      <section class="testimonials"></section>
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
+      </div>
+    </section>
+    <section class="carousel"></section>
+    <section class="testimonials"></section>
+    <script type="text l-stack/javascript" src="js/main.js"></script>
   </body>
 </html>
