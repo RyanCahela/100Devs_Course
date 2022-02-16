@@ -1,0 +1,98 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.l-center {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+/******************************************
+Header
+/*******************************************/
+.header {
+  border-bottom: 2px solid #333;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__form {
+  display: flex;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-list > * + * {
+  margin-left: 1rem;
+}
+
+/******************************************
+HERO
+/*******************************************/
+.hero {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.hero__nav-list {
+  display: flex;
+}
+
+.hero__copy {
+  padding-right: 3rem;
+}
+
+.hero__nav-list > * + * {
+  margin-left: 1rem;
+}
